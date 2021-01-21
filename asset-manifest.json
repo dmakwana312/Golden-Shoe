@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/Golden-Shoe/static/css/main.338fcf98.chunk.css",
-    "main.js": "/Golden-Shoe/static/js/main.5fa31c38.chunk.js",
-    "main.js.map": "/Golden-Shoe/static/js/main.5fa31c38.chunk.js.map",
+    "main.js": "/Golden-Shoe/static/js/main.c7b2e8b5.chunk.js",
+    "main.js.map": "/Golden-Shoe/static/js/main.c7b2e8b5.chunk.js.map",
     "runtime-main.js": "/Golden-Shoe/static/js/runtime-main.c8eb570b.js",
     "runtime-main.js.map": "/Golden-Shoe/static/js/runtime-main.c8eb570b.js.map",
     "static/css/2.150d169a.chunk.css": "/Golden-Shoe/static/css/2.150d169a.chunk.css",
-    "static/js/2.298a0c89.chunk.js": "/Golden-Shoe/static/js/2.298a0c89.chunk.js",
-    "static/js/2.298a0c89.chunk.js.map": "/Golden-Shoe/static/js/2.298a0c89.chunk.js.map",
+    "static/js/2.bafbd89c.chunk.js": "/Golden-Shoe/static/js/2.bafbd89c.chunk.js",
+    "static/js/2.bafbd89c.chunk.js.map": "/Golden-Shoe/static/js/2.bafbd89c.chunk.js.map",
     "static/js/3.4671088b.chunk.js": "/Golden-Shoe/static/js/3.4671088b.chunk.js",
     "static/js/3.4671088b.chunk.js.map": "/Golden-Shoe/static/js/3.4671088b.chunk.js.map",
     "index.html": "/Golden-Shoe/index.html",
     "static/css/2.150d169a.chunk.css.map": "/Golden-Shoe/static/css/2.150d169a.chunk.css.map",
     "static/css/main.338fcf98.chunk.css.map": "/Golden-Shoe/static/css/main.338fcf98.chunk.css.map",
-    "static/js/2.298a0c89.chunk.js.LICENSE.txt": "/Golden-Shoe/static/js/2.298a0c89.chunk.js.LICENSE.txt",
+    "static/js/2.bafbd89c.chunk.js.LICENSE.txt": "/Golden-Shoe/static/js/2.bafbd89c.chunk.js.LICENSE.txt",
     "static/media/style.css": "/Golden-Shoe/static/media/home-page-bg.87096e53.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c8eb570b.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.298a0c89.chunk.js",
+    "static/js/2.bafbd89c.chunk.js",
     "static/css/main.338fcf98.chunk.css",
-    "static/js/main.5fa31c38.chunk.js"
+    "static/js/main.c7b2e8b5.chunk.js"
   ]
 }
