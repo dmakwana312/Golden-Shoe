@@ -7,8 +7,7 @@ const Header = ({ activeLink }) => (
             <Navbar.Brand href="#home">Golden Shoes</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto" activeKey={activeLink}
-  onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+                <Nav className="mr-auto" activeKey={activeLink}>
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#products">Products</Nav.Link>
                     <Nav.Link href="#myAccount">My Account</Nav.Link>

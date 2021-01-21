@@ -1,0 +1,31 @@
+.homeContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("/src/images/home-page-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homeInner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: white;
+}
+
+
+h1 {
+    font-size: calc(3em + 1vw) !important;
+}
+
+h2 {
+    font-size: calc(1em + 1vw) !important;
+}
+
+
