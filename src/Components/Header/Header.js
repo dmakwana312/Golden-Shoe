@@ -1,6 +1,10 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
+import {
+    Link
+} from "react-router-dom";
+
 const Header = ({ activeLink }) => (
     <>
         <Navbar collapseOnSelect sticky="top" expand="lg" bg="primary" variant="dark">
@@ -8,11 +12,11 @@ const Header = ({ activeLink }) => (
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto" activeKey={activeLink}>
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#products">Products</Nav.Link>
-                    <Nav.Link href="#myAccount">My Account</Nav.Link>
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/" href="/" exact>Home</Nav.Link>
+                    <Nav.Link as={Link} to="/products" href="/products">Products</Nav.Link>
+                    <Nav.Link as={Link} to="/myaccount" href="/myaccount">My Account</Nav.Link>
+                    <Nav.Link as={Link} to="/about" href="/about">About</Nav.Link>
+                    <Nav.Link as={Link} to="/contact" href="/contact">Contact</Nav.Link>
                     
                 </Nav>
                 <Nav>

@@ -4,13 +4,17 @@ import './style.css';
 
 import { Button } from 'react-bootstrap';
 
+import {
+    Link
+} from "react-router-dom";
+
 const HomePage = () => (
     <div className="homeContainer">
-        <Header activeLink="#home"></Header>
+        <Header activeLink="/"></Header>
         <div className="homeInner">
             <h1>Golden Shoe</h1>
             <h2>Visit Our Store To View Our Range</h2>
-            <Button variant="primary">Visit Store</Button>
+            <Button variant="primary" as={Link} to="/products" href="/products">Visit Store</Button>
         </div>
         
     </div>
