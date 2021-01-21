@@ -16,19 +16,19 @@ function App() {
             <Router>
                 <Switch>
 
-                    <Route exact path="/">
+                    <Route exact path="/Golden-Shoe">
                         <HomePage />
                     </Route>
-                    <Route path="/products">
+                    <Route path="/Golden-Shoe/products">
                         <ComingSoonPage title="Products" />
                     </Route>
-                    <Route path="/myaccount">
+                    <Route path="/Golden-Shoe/myaccount">
                         <ComingSoonPage title="My Account"/>
                     </Route>
-                    <Route path="/about">
+                    <Route path="/Golden-Shoe/about">
                         <ComingSoonPage title="About"/>
                     </Route>
-                    <Route path="/contact">
+                    <Route path="/Golden-Shoe/contact">
                         <ComingSoonPage title="Contact Us"/>
                     </Route>                
                 
