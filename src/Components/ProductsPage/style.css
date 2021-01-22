@@ -1,0 +1,26 @@
+.productsContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("/src/images/home-page-bg.jpg");
+    box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+.productsInner {
+    padding: 30px;
+    
+}
+
+h1 {
+    font-size: calc(3em + 1vw) !important;
+    color: white;
+    margin: 2vh !important;
+}
+
+h2 {
+    font-size: calc(1em + 1vw) !important;
+}

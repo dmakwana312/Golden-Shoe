@@ -10,7 +10,7 @@ import {
 
 const HomePage = () => (
     <div className="homeContainer">
-        <Header activeLink="/"></Header>
+        <Header activeLink="/Golden-Shoe"></Header>
         <div className="homeInner">
             <h1>Golden Shoe</h1>
             <h2>Visit Our Store To View Our Range</h2>

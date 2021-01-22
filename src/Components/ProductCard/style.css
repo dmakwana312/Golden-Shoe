@@ -1,0 +1,17 @@
+.productCard {
+    color: black !important;
+    width: 20rem;
+    
+}
+
+.productPrice {
+    float: left;
+    text-align: left;
+}
+
+.productQuantity {
+    float: right;
+    text-align: right;
+}
+
+

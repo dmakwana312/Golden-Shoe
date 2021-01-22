@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import HomePage from './Components/HomePage/HomePage.js';
 import ComingSoonPage from './Components/ComingSoonPage/ComingSoonPage.js';
+import ProductsPage from './Components/ProductsPage/ProductsPage.js';
 
 import {
     BrowserRouter as Router,
@@ -20,7 +21,7 @@ function App() {
                         <HomePage />
                     </Route>
                     <Route path="/Golden-Shoe/products">
-                        <ComingSoonPage title="Products" />
+                        <ProductsPage />
                     </Route>
                     <Route path="/Golden-Shoe/myaccount">
                         <ComingSoonPage title="My Account"/>
