@@ -1,0 +1,60 @@
+.sidebar {
+    height: 100vh;
+    padding-left: 20px;
+    opacity: 0.8;
+    color: white;
+    width: 400px;
+    position: fixed;
+    z-index: 200;
+    left: -400px;
+    animation: slide-open 0.75s forwards;
+}
+
+.sidebar.close {
+    left: 0%;
+    animation: slide-close 0.75s forwards;
+}
+
+@keyframes slide-open {
+    100% { left: 0%}
+}
+
+@keyframes slide-close {
+    100% { left: -400px}
+}
+
+.filterBtn {
+    letter-spacing: 2px;
+    font-size: calc(1em + 1vw) !important;
+    left: 0px;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    transform: rotate(90);
+    -moz-transform: rotate(90);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform-origin: bottom left;
+    top: 30%;
+    border-radius: 5px 5px 0px 0px !important;
+    z-index: 200;
+    animation: slide-to-close-position  0.75s forwards;
+
+}
+
+.filterBtn.open{
+    left: 0%;
+    animation: slide-to-open-position 0.75s forwards;
+    font-style: normal;
+}
+
+@keyframes slide-to-open-position {
+    100% { left: 400px}
+}
+
+@keyframes slide-to-close-position {
+    0% {left: 400px}
+    100% {left: 0px}
+}
+

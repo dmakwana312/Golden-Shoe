@@ -17,9 +17,7 @@ function App() {
             <Router>
                 <Switch>
 
-                    <Route exact path="/Golden-Shoe">
-                        <HomePage />
-                    </Route>
+                    
                     <Route path="/Golden-Shoe/products">
                         <ProductsPage />
                     </Route>
@@ -31,7 +29,10 @@ function App() {
                     </Route>
                     <Route path="/Golden-Shoe/contact">
                         <ComingSoonPage title="Contact Us"/>
-                    </Route>                
+                    </Route>       
+                    <Route path="/Golden-Shoe">
+                        <HomePage />
+                    </Route>         
                 
                 </Switch>
             </Router>

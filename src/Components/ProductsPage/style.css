@@ -12,15 +12,22 @@
 
 .productsInner {
     padding: 30px;
-    
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 h1 {
     font-size: calc(3em + 1vw) !important;
     color: white;
     margin: 2vh !important;
+    padding-bottom: 20px;
 }
 
 h2 {
     font-size: calc(1em + 1vw) !important;
 }
+
+
+
+
+
