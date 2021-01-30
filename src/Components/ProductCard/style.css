@@ -3,14 +3,7 @@
     width: 20rem;
 }
 
-.productPrice {
-    float: left;
-    text-align: left;
-}
-
 .productOutOfStock {
-    float: left;
-    text-align: left;
     color: red;
 }
 

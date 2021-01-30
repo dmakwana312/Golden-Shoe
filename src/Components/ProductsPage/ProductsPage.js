@@ -37,6 +37,7 @@ const ProductsPage = () => {
                                     price={data.price}
                                     quantity={data.quantity}
                                     img_url={data.image_url}
+                                    gender={data.gender}
                                 ></ProductCard>
                             );
                         })}

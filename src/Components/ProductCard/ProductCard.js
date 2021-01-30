@@ -3,7 +3,7 @@ import './style.css';
 
 import { Card, Col } from 'react-bootstrap';
 
-const ProductCard = ({ productName, price, quantity, img_url }) => (
+const ProductCard = ({ productName, price, quantity, img_url, gender }) => (
 
 
 
@@ -13,9 +13,10 @@ const ProductCard = ({ productName, price, quantity, img_url }) => (
 
             <Card.Body >
                 <Card.Title className="text-left">{productName}</Card.Title>
-                <Card.Text>
+                <Card.Subtitle className="text-left mb-2 text-muted">{gender}</Card.Subtitle>
+                <Card.Text className="text-left">
                     {quantity > 0 ?
-                    <span className="productPrice">£{price}</span> :
+                    <span>£{price}</span> :
                     <span className="productOutOfStock">Out of Stock</span>}
                 </Card.Text>
 
