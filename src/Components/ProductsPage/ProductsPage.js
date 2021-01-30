@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header.js';
 import './style.css';
 
@@ -8,8 +8,13 @@ import ProductCard from '../ProductCard/ProductCard.js';
 import Sidebar from '../Sidebar/Sidebar.js';
 
 import 'font-awesome/css/font-awesome.min.css';
+import * as DataHandler from '../../data/productsActions.js';
+
 
 const ProductsPage = () => {
+
+    var allProducts = DataHandler.getAllProducts();
+
 
     return (
 
@@ -21,21 +26,22 @@ const ProductsPage = () => {
 
                 <div className="productsInner">
                     <h1>Products</h1>
-                    <Row className = "justify-content-md-center">
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
-                        <ProductCard productName="Name" price="45.00" quantity="3245" />
+                    <Row className="justify-content-md-center">
+
+                        
+                        {allProducts["shoes"].map((data, key) => {
+                            return(
+                                <ProductCard 
+                                    key={key}
+                                    productName={data.shoe_name}
+                                    price={data.price}
+                                    quantity={data.quantity}
+                                    img_url={data.image_url}
+                                ></ProductCard>
+                            );
+                        })}
+
+                        
 
                     </Row>
                 </div>
