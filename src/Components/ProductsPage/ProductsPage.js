@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header.js';
 import './style.css';
 
@@ -7,14 +7,22 @@ import ProductCard from '../ProductCard/ProductCard.js';
 
 import Sidebar from '../Sidebar/Sidebar.js';
 
+import SortMenu from '../SortMenu/SortMenu.js';
+
 import 'font-awesome/css/font-awesome.min.css';
 import * as DataHandler from '../../data/productsActions.js';
 
 
 const ProductsPage = () => {
 
-    var allProducts = DataHandler.getAllProducts();
+    const [allProducts, setAllProducts] = useState(DataHandler.getAllProducts());
+    const [productsToDisplay, setProductsToDisplay] = useState(allProducts);
 
+
+    function sortDropDownHandler(direction) {
+        setProductsToDisplay([...DataHandler.sortDisplayOrderByPrice(productsToDisplay, direction)]);
+
+    }
 
     return (
 
@@ -26,12 +34,16 @@ const ProductsPage = () => {
 
                 <div className="productsInner">
                     <h1>Products</h1>
+                    <div className="justify-content-md-center">
+                        <SortMenu selectHandler={sortDropDownHandler}></SortMenu>
+                    </div>
+
                     <Row className="justify-content-md-center">
 
-                        
-                        {allProducts["shoes"].map((data, key) => {
-                            return(
-                                <ProductCard 
+
+                        {productsToDisplay.map((data, key) => {
+                            return (
+                                <ProductCard
                                     key={key}
                                     productName={data.shoe_name}
                                     price={data.price}
@@ -42,7 +54,7 @@ const ProductsPage = () => {
                             );
                         })}
 
-                        
+
 
                     </Row>
                 </div>
@@ -50,6 +62,8 @@ const ProductsPage = () => {
         </div>
 
     );
+
+
 }
 
 export default ProductsPage;
