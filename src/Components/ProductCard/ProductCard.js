@@ -3,7 +3,7 @@ import './style.css';
 
 import { Card, Col } from 'react-bootstrap';
 
-const ProductCard = ({ productName, price, quantity, img_url, gender }) => {
+const ProductCard = ({ productName, price, img_url, gender }) => {
 
     const capitaliseFirstLetter = (word) => {
         return(word.charAt(0).toUpperCase() + word.slice(1));
@@ -18,9 +18,7 @@ const ProductCard = ({ productName, price, quantity, img_url, gender }) => {
                 <Card.Title className="text-left">{productName}</Card.Title>
                 <Card.Subtitle className="text-left mb-2 text-muted">{capitaliseFirstLetter(gender)}</Card.Subtitle>
                 <Card.Text className="text-left">
-                    {quantity > 0 ?
-                    <span>£{price}</span> :
-                    <span className="productOutOfStock">Out of Stock</span>}
+                    <span>£{price}</span> 
                 </Card.Text>
 
             </Card.Body>

@@ -98,13 +98,12 @@ const ProductsPage = () => {
                     <Row className="justify-content-md-center">
 
                         {productsToDisplay.map((data, key) => {
-
                             return (
+                                
                                 <ProductCard
                                     key={key}
                                     productName={data.shoe_name}
                                     price={data.price}
-                                    quantity={data.quantity}
                                     img_url={data.image_url}
                                     gender={data.gender}
                                 ></ProductCard>
