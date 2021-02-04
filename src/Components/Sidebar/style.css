@@ -1,7 +1,7 @@
 .sidebar {
+    background-color: rgba(149, 49, 37, 0.8);
     height: 100vh;
     padding-left: 20px;
-    opacity: 0.8;
     color: white;
     width: 400px;
     position: fixed;
@@ -13,6 +13,31 @@
 .sidebar.close {
     left: 0%;
     animation: slide-close 0.75s forwards;
+}
+
+.heading {
+    
+    display: inline !important;
+}
+
+.title{
+    float: left;
+    font-size: 20px;
+}
+
+.closeButton{
+    float: right;
+}
+
+.title, .closeButton {
+    margin: 20px;
+}
+
+.filterOptions {
+    margin-top: 100px;
+    margin-right: 20px;
+    color: black;
+
 }
 
 @keyframes slide-open {
@@ -57,4 +82,5 @@
     0% {left: 400px}
     100% {left: 0px}
 }
+
 
