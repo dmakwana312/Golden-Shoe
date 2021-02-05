@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Header from '../Header/Header.js';
 import './style.css';
 
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Toast } from 'react-bootstrap';
 import ProductCard from '../ProductCard/ProductCard.js';
 
 import Sidebar from '../Sidebar/Sidebar.js';
 
 import SortMenu from '../SortMenu/SortMenu.js';
+
+import ProductInfoModal from '../ProductInfoModal/ProductInfoModal.js';
 
 import 'font-awesome/css/font-awesome.min.css';
 import * as DataHandler from '../../data/productsActions.js';
@@ -15,18 +17,22 @@ import * as DataHandler from '../../data/productsActions.js';
 
 const ProductsPage = () => {
 
-    useEffect(() => {
-
-    }, []);
-    const [allProducts, setAllProducts] = useState(DataHandler.getAllProducts());
+    
+    const [allProducts] = useState(DataHandler.getAllProducts());
     const [productsToDisplay, setProductsToDisplay] = useState(allProducts);
     const [filtersToApply, setFiltersToApply] = useState({
         male: false,
         female: false,
         styleNames: []
     })
-    const [allStyles, setAllStyles] = useState(DataHandler.getStyles(productsToDisplay));
+    const [allStyles] = useState(DataHandler.getStyles(productsToDisplay));
+    const [modalShow, setModalShow] = useState(false);
+    const [productInModal, setProductInModal] = useState(null);
+    const [showToast, setShowToast] = useState(true);
 
+    useEffect(() => {
+        
+    });
 
     const sortDropDownHandler = (direction) => {
         setProductsToDisplay([...DataHandler.sortDisplayOrderByPrice(productsToDisplay, direction)]);
@@ -80,6 +86,22 @@ const ProductsPage = () => {
 
     }
 
+    const viewProductInfo = (shoe_id) => {
+
+        const product = productsToDisplay.filter(function (item) {
+            return item["shoe_id"] === shoe_id;
+        })
+
+        setProductInModal(product[0]);
+
+        setModalShow(true);
+
+    }
+
+    const addToBasket = (shoe_id, size) => {
+        setModalShow(false);
+        setShowToast(true);
+    }
 
     return (
 
@@ -99,18 +121,38 @@ const ProductsPage = () => {
 
                         {productsToDisplay.map((data, key) => {
                             return (
-                                
+
                                 <ProductCard
                                     key={key}
+                                    shoe_id={data.shoe_id}
                                     productName={data.shoe_name}
                                     price={data.price}
                                     img_url={data.image_url}
                                     gender={data.gender}
+                                    addToBasketButtonEventHandler={viewProductInfo}
                                 ></ProductCard>
                             );
                         })}
 
+                        {modalShow && <ProductInfoModal
+                            product={productInModal}
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                            addToBasketButtonEventHandler={addToBasket}
+                        />}
+                        <Toast
+                            className="addedToBasketToast"
+                            onClose={() => setShowToast(false)}
+                            show={showToast}
+                            delay={5000}
 
+                            autohide
+                        >
+                            <Toast.Header>
+                                <strong className="mr-auto">Golden Shoe</strong>
+                            </Toast.Header>
+                            <Toast.Body>Item Added To Basket</Toast.Body>
+                        </Toast>
 
                     </Row>
                 </div>

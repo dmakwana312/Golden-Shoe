@@ -1,0 +1,9 @@
+.productImage {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
+.btn {
+    margin: 5px;
+}
