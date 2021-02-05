@@ -28,7 +28,7 @@ const ProductsPage = () => {
     const [allStyles] = useState(DataHandler.getStyles(productsToDisplay));
     const [modalShow, setModalShow] = useState(false);
     const [productInModal, setProductInModal] = useState(null);
-    const [showToast, setShowToast] = useState(true);
+    const [showToast, setShowToast] = useState(false);
 
     useEffect(() => {
         

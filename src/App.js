@@ -6,7 +6,7 @@ import ComingSoonPage from './Components/ComingSoonPage/ComingSoonPage.js';
 import ProductsPage from './Components/ProductsPage/ProductsPage.js';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
@@ -18,19 +18,19 @@ function App() {
                 <Switch>
 
                     
-                    <Route path="/Golden-Shoe/products">
+                    <Route path="/products">
                         <ProductsPage />
                     </Route>
-                    <Route path="/Golden-Shoe/myaccount">
+                    <Route path="/myaccount">
                         <ComingSoonPage title="My Account"/>
                     </Route>
-                    <Route path="/Golden-Shoe/about">
+                    <Route path="/about">
                         <ComingSoonPage title="About"/>
                     </Route>
-                    <Route path="/Golden-Shoe/contact">
+                    <Route path="/contact">
                         <ComingSoonPage title="Contact Us"/>
                     </Route>       
-                    <Route path="/Golden-Shoe">
+                    <Route path="/">
                         <HomePage />
                     </Route>         
                 

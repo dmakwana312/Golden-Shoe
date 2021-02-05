@@ -14,7 +14,7 @@ const HomePage = () => (
         <div className="homeInner">
             <h1>Golden Shoe</h1>
             <h2>Visit Our Store To View Our Range</h2>
-            <Button variant="primary" as={Link} to="Golden-Shoe/products" href="Golden-Shoe/products">Visit Store</Button>
+            <Button variant="primary" as={Link} to="/products" href="/products">Visit Store</Button>
         </div>
         
     </div>

@@ -12,11 +12,11 @@ const Header = ({ activeLink }) => (
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto" activeKey={activeLink}>
-                    <Nav.Link as={Link} to="/Golden-Shoe" href="/Golden-Shoe">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/Golden-Shoe/products" href="/Golden-Shoe/products">Products</Nav.Link>
-                    <Nav.Link as={Link} to="/Golden-Shoe/myaccount" href="/Golden-Shoe/myaccount">My Account</Nav.Link>
-                    <Nav.Link as={Link} to="/Golden-Shoe/about" href="/Golden-Shoe/about">About</Nav.Link>
-                    <Nav.Link as={Link} to="/Golden-Shoe/contact" href="/Golden-Shoe/contact">Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/" href="/Golden-Shoe">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/products" href="/Golden-Shoe/products">Products</Nav.Link>
+                    <Nav.Link as={Link} to="/myaccount" href="/Golden-Shoe/myaccount">My Account</Nav.Link>
+                    <Nav.Link as={Link} to="/about" href="/Golden-Shoe/about">About</Nav.Link>
+                    <Nav.Link as={Link} to="/contact" href="/Golden-Shoe/contact">Contact</Nav.Link>
                     
                 </Nav>
                 <Nav>
