@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Golden-Shoe/static/css/main.fdcd25f4.chunk.css",
-    "main.js": "/Golden-Shoe/static/js/main.1e57fa54.chunk.js",
-    "main.js.map": "/Golden-Shoe/static/js/main.1e57fa54.chunk.js.map",
-    "runtime-main.js": "/Golden-Shoe/static/js/runtime-main.619d3399.js",
-    "runtime-main.js.map": "/Golden-Shoe/static/js/runtime-main.619d3399.js.map",
+    "main.css": "/Golden-Shoe/static/css/main.6f6a18bd.chunk.css",
+    "main.js": "/Golden-Shoe/static/js/main.1161ce05.chunk.js",
+    "main.js.map": "/Golden-Shoe/static/js/main.1161ce05.chunk.js.map",
+    "runtime-main.js": "/Golden-Shoe/static/js/runtime-main.df2f870c.js",
+    "runtime-main.js.map": "/Golden-Shoe/static/js/runtime-main.df2f870c.js.map",
     "static/css/2.f44ed01f.chunk.css": "/Golden-Shoe/static/css/2.f44ed01f.chunk.css",
-    "static/js/2.cf3b4aca.chunk.js": "/Golden-Shoe/static/js/2.cf3b4aca.chunk.js",
-    "static/js/2.cf3b4aca.chunk.js.map": "/Golden-Shoe/static/js/2.cf3b4aca.chunk.js.map",
-    "static/js/3.38c09bf8.chunk.js": "/Golden-Shoe/static/js/3.38c09bf8.chunk.js",
-    "static/js/3.38c09bf8.chunk.js.map": "/Golden-Shoe/static/js/3.38c09bf8.chunk.js.map",
+    "static/js/2.cbbb1a7a.chunk.js": "/Golden-Shoe/static/js/2.cbbb1a7a.chunk.js",
+    "static/js/2.cbbb1a7a.chunk.js.map": "/Golden-Shoe/static/js/2.cbbb1a7a.chunk.js.map",
+    "static/js/3.d306d3fd.chunk.js": "/Golden-Shoe/static/js/3.d306d3fd.chunk.js",
+    "static/js/3.d306d3fd.chunk.js.map": "/Golden-Shoe/static/js/3.d306d3fd.chunk.js.map",
     "index.html": "/Golden-Shoe/index.html",
     "static/css/2.f44ed01f.chunk.css.map": "/Golden-Shoe/static/css/2.f44ed01f.chunk.css.map",
-    "static/css/main.fdcd25f4.chunk.css.map": "/Golden-Shoe/static/css/main.fdcd25f4.chunk.css.map",
-    "static/js/2.cf3b4aca.chunk.js.LICENSE.txt": "/Golden-Shoe/static/js/2.cf3b4aca.chunk.js.LICENSE.txt",
+    "static/css/main.6f6a18bd.chunk.css.map": "/Golden-Shoe/static/css/main.6f6a18bd.chunk.css.map",
+    "static/js/2.cbbb1a7a.chunk.js.LICENSE.txt": "/Golden-Shoe/static/js/2.cbbb1a7a.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/Golden-Shoe/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/style.css": "/Golden-Shoe/static/media/home-page-bg.87096e53.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.619d3399.js",
+    "static/js/runtime-main.df2f870c.js",
     "static/css/2.f44ed01f.chunk.css",
-    "static/js/2.cf3b4aca.chunk.js",
-    "static/css/main.fdcd25f4.chunk.css",
-    "static/js/main.1e57fa54.chunk.js"
+    "static/js/2.cbbb1a7a.chunk.js",
+    "static/css/main.6f6a18bd.chunk.css",
+    "static/js/main.1161ce05.chunk.js"
   ]
 }
