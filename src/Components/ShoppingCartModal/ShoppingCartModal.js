@@ -16,7 +16,7 @@ const ShoppingCartModal = (props) => {
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
-            onHide={() => props.hide(false)}
+            onHide={props.hide}
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
@@ -69,7 +69,7 @@ const ShoppingCartModal = (props) => {
 
             </Modal.Body>
             <Modal.Footer>
-                <Button onClick={() => props.hide()}>Close</Button>
+                <Button onClick={props.hide}>Close</Button>
             </Modal.Footer>
         </Modal>
     );
