@@ -131,6 +131,7 @@ const ProductsPage = (props) => {
                                     gender={data.gender}
                                     addToBasketButtonEventHandler={viewProductInfo}
                                 ></ProductCard>
+                                
                             );
                         })}
 

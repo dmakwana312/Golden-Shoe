@@ -19,3 +19,18 @@
     right: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
+
+.productCard {
+    animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 50px
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}

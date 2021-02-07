@@ -12,7 +12,7 @@ const ProductCard = (props) => {
     const [showAddToBasketButton, setShoeAddToBasketButton] = useState(false);
 
     return (
-        <Col md="3">
+        <Col className="productCard" md="3">
             <Card className="mb-3 box-shadow"
                 onMouseEnter={e => {
                     setShoeAddToBasketButton(true);
