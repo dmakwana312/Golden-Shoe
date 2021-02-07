@@ -16,7 +16,6 @@ const Sidebar = (props) => {
         props.filterFunction(value);
     }
 
-
     const sidebarHandler = () => {
         if (sidebarOpen) {
             setFilterBtnClass("filterBtn")
@@ -94,10 +93,6 @@ const Sidebar = (props) => {
                         </Card>
                     </Accordion>
                 </div>
-
-
-
-
 
             </div>
         </div>

@@ -3,21 +3,19 @@ import Header from '../Header/Header.js';
 import './style.css';
 
 import { Container, Row, Toast } from 'react-bootstrap';
-import ProductCard from '../ProductCard/ProductCard.js';
+import ProductCard from '../ProductCard/ProductCard';
 
-import Sidebar from '../Sidebar/Sidebar.js';
+import Sidebar from '../Sidebar/Sidebar';
 
-import SortMenu from '../SortMenu/SortMenu.js';
+import SortMenu from '../SortMenu/SortMenu';
 
-import ProductInfoModal from '../ProductInfoModal/ProductInfoModal.js';
+import ProductInfoModal from '../ProductInfoModal/ProductInfoModal';
 
 import 'font-awesome/css/font-awesome.min.css';
-import * as DataHandler from '../../data/productsActions.js';
+import * as DataHandler from '../../data/productsActions';
 
+const ProductsPage = (props) => {
 
-const ProductsPage = () => {
-
-    
     const [allProducts] = useState(DataHandler.getAllProducts());
     const [productsToDisplay, setProductsToDisplay] = useState(allProducts);
     const [filtersToApply, setFiltersToApply] = useState({
@@ -29,10 +27,6 @@ const ProductsPage = () => {
     const [modalShow, setModalShow] = useState(false);
     const [productInModal, setProductInModal] = useState(null);
     const [showToast, setShowToast] = useState(false);
-
-    useEffect(() => {
-        
-    });
 
     const sortDropDownHandler = (direction) => {
         setProductsToDisplay([...DataHandler.sortDisplayOrderByPrice(productsToDisplay, direction)]);
@@ -62,7 +56,6 @@ const ProductsPage = () => {
 
         setFiltersToApply(updatedFilters);
         applyFilters();
-
 
     }
 
@@ -99,14 +92,21 @@ const ProductsPage = () => {
     }
 
     const addToBasket = (shoe_id, size) => {
-        setModalShow(false);
-        setShowToast(true);
+        if(size !== -1){
+            setModalShow(false);
+            setShowToast(true);
+            props.addToCartAction(shoe_id, size);
+        }
+        else{
+            alert("Please Select a Size")
+        }
+        
     }
 
     return (
 
         <div className="productsContainer">
-            <Header activeLink="/Golden-Shoe/products"></Header>
+            <Header shoppingCart={props.cart} deleteFromCartAction={props.deleteFromCartAction} activeLink="/Golden-Shoe/products"></Header>
             <Sidebar styles={allStyles} filterFunction={setFilters}></Sidebar>
 
             <Container fluid>
@@ -160,7 +160,6 @@ const ProductsPage = () => {
         </div>
 
     );
-
 
 }
 

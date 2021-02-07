@@ -6,7 +6,7 @@ import './style.css';
 
 const ProductInfoModal = (props) => {
 
-    const [selectedSize, setSelectedSize] = useState(null);
+    const [selectedSize, setSelectedSize] = useState(-1);
 
     return (
         <Modal
